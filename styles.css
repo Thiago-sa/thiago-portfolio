@@ -58,6 +58,8 @@ body {
   font-family: var(--font-sans);
   font-size: var(--fz-xl);
   line-height: 1.3;
+  overflow-x: hidden;
+
 }
 
 /* Scrollbar personalizada */
@@ -452,7 +454,7 @@ main {
   width: 100%;
   max-width: 1600px;
   min-height: 100vh;
-  padding: 0 150px;
+  padding: 0 20px;
 }
 
 section {
@@ -1187,4 +1189,18 @@ section {
 .icon-whatsapp {
   font-size: 24px; /* ou o tamanho que preferir */
   margin-right: 8px;
+}
+
+@media (max-width: 480px) {
+  section {
+    padding: 60px 15px;
+  }
+
+  .hero-description {
+    max-width: 100%;
+  }
+
+  .about-pic {
+    width: 100%;
+  }
 }
